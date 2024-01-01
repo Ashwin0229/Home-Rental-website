@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap C SS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+				<style>
+				#searchbox
+				{
+					font-style: italic;
+					border-style: none;
+					border-radius: 2px;
+					padding: 5px;
+					width: 300px;
+					border-right-style:solid ;
+					border-right-color: lightgrey;
+				}
+			#arcadeDesign
+				{		
+					font-size: 30px; 
+					padding-left: 150px;
+					background: black;
+					color: white;
+					background-image: "landingImage.jpg";
+					opacity: 0.5;
+					background-color: transparent;		
+				}
+			#menutextcolor
+				{
+					color: white;		
+				}
+			.searchbutton
+				{
+					border-style: none;
+					border-radius: 0px;		
+					height: 34px;
+					width: 50px;
+				}
+			#menubuttons_align
+				{
+					padding-top: 12px;
+					padding-left: 10px;			
+				}
+			#profilebuttons_align
+				{
+					float:right;		
+				}
+			#menubar
+				{
+					background: rgb(12, 12, 12); 
+					padding-top: 15px; 
+					padding-bottom: 0px;	
+					opacity: 0.5;	
+				}
+			#profilebar
+				{
+					background: rgb(162, 168, 163); 
+					padding: 10px;	
+					height: 50px;			
+								
+				}
+			#profiletextcolor
+				{
+					color: rgb(12, 12, 12);
+					font-size: 20px;	
+
+				}
+
+			nav li a:hover{
+				background: rgb(76, 76, 79);
+			}
+			ul
+				{
+					list-style: none;
+				}
+			#menunavbar
+				{
+					padding: 0px;		
+				}
+			#BreadcrumbStyle
+				{
+					padding: 10px;
+					padding-right: 30px;			
+				}
+			#memeareabox
+				{
+					width: 100%;
+					height: 100%;
+				}
+			#memeitbox
+				{
+					width: 200px; 
+					height: 100px;
+					margin-left: 20px;
+					text-align: center;
+				}
+			#memepictures
+				{
+					padding-left: 25px;
+				}
+			#memecards
+				{
+					width: 18rem; margin: 20px;	
+					border: none;	
+				}
+			#userText
+				{
+					text-align: center; 		
+					color: white; 		
+					font-size: 25px;	
+					border: 2px;	
+					padding: 0px;			
+				}
+			#commentbox
+				{
+					background: black; 
+			/*		text-align: left; 		*/
+					color: white; 		
+					font-size: 25px;	
+			/*		padding-top: 50px;	*/
+					padding-left: 15px;
+					font-family: arial;
+			/*		opacity: 0.5;*/
+				}
+			#cards-columns
+				{
+					background: black; 
+					opacity: 0.7;
+					color: white;	
+					width: 100%;
+					margin-left: 0px;	
+					border: none;	
+				}
+			#Breadcrumbtext
+				{
+					color: black;
+				}
+			#contact-col
+				{
+					background: black; 
+			/*		opacity: 1.0;*/
+					color: white;
+					height: 70px;			
+					padding: 20px;	
+					padding-top: 20px;
+					border: none;	
+				}
+			#contactus_box
+				{
+					border: 1px solid lightgray;
+					border-radius: 2px;	
+					padding: 10px;
+					padding-left: 20px;
+					padding-right: 20px;			
+					width: 100%;
+				}
+			#Follow_us_box
+				{
+					background: black; 
+					color: white;
+					margin-top: 10px; 
+					height: 60px; 
+					font-size: 22px;
+			/*		opacity: 0.3;*/
+					border: none;
+				}
+			#contactus_textbox
+				{		 
+					align-content: center;		
+					border-radius: 2px;
+					border: 1px solid lightgray;		
+					padding: 10px;	
+					padding-left: 20px;
+					padding-right: 20px;
+					width: 100%;
+				}
+			#card_option_box1
+				{
+					display: block;	
+					font-style: italic;	
+				}
+			#card_option_box2
+				{
+					display: block;
+					font-style: italic;
+				}
+			#contact_row
+				{
+					width: 100%;
+				}
+			html, body 
+				{
+					max-width: 100%;
+					overflow-x: hidden;	    
+					background-image: "landingImage.jpg"
+				}
+			#header_Explore
+				{
+					color: white; 
+					opacity: 1.0;
+					padding-top: 100px; 
+					font-style: italic; 
+					font-family: URW Chancery L, cursive;
+			/*		background-color: #cccccc;*/
+				}
+			a
+				{
+					color: black;
+				}
+
+			.image_text 
+				{
+				display: flex;
+				align-items: center;
+				justify-content: right;
+				padding: 50px;
+				background-color: black;
+				}
+
+			.image_text2 
+				{
+				display: flex;
+				align-items: center;
+				justify-content: left;
+				padding: 50px;
+				background-color: #3d3721;
+				}
+
+			.image_text3
+				{
+				display: flex;
+				align-items: center;
+				justify-content: left;
+				padding: 50px;
+				background-color: black;
+				}
+
+			.text
+				{
+					padding-right: 30%;
+				}
+			.text3
+				{
+					padding-left: 50px;
+				}
+
+			.column {
+			float: left;
+			width: 33.33%;
+			padding-left: 200px;
+			}
+			.col-sm-6{
+				margin-left: 0px;
+				border-left: 10px;
+				padding-left: 100px;
+			}
+
+			/* Clearfix (clear floats) */
+			.row::after {
+			content: "";
+			clear: both;
+			display: table;
+			}
+
+			#contact_submit
+				{
+					background-color: green;
+					border: green;
+				}
+
+
+			#sec4{
+				background-color:rgb(157, 143, 126)
+			}
+
+			#desc{
+				padding-top:130px;
+				padding-bottom: 0px;
+				padding-right: 10px;
+				padding-left: 200px;
+				color: rgb(181, 150, 78)!important;
+			}
+
+			#card1{
+			padding-left:750px;
+			padding-bottom: 40px;
+			}
+
+		</style>
+
+  </head>
+  <body>
+    <div>
+			<div id="profilebar">
+			    <ul>	     
+			      <li class="nav-item" id="profilebuttons_align">
+			        <a class="navbar-brand" href="/" id="profiletextcolor"><i class="bi bi-box-arrow-right"></i>Log Out</a>
+			      </li>
+			            
+			    </ul>	   
+			</div>
+			<nav class="navbar navbar-expand-lg navbar-light bg-light" id="menunavbar">	 
+			  <div class="collapse navbar-collapse" id="menubar">
+			    <ul class="navbar-nav mr-auto">
+			      <li>
+			      	<a class="navbar-brand mb-0 h1" href="#" id="arcadeDesign" style="font-family:'Times New Roman', Times, serif; font-weight: bold; color:rgb(237, 209, 209)">RENTAL PROPERTIES</a>
+				    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				    <span class="navbar-toggler-icon"></span>
+				    </button>
+			      </li>
+			      <li class="nav-item" id="menubuttons_align">
+			        <a class="nav-link" href="/home" id="menutextcolor">Home <span class="sr-only">(current)</span></a>
+			      </li>
+			      <li class="nav-item" id="menubuttons_align">
+			        <a class="nav-link" href="#" id="menutextcolor">Gallery</a>
+			      </li>
+			      <li class="nav-item dropdown" id="menubuttons_align">
+			        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">
+			          PropertyType
+			        </a>
+			        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			          <a class="dropdown-item" href="#">Rental</a>
+			          <a class="dropdown-item" href="#">Purchase</a>	          
+			        </div>
+			      </li>
+			      <li class="nav-item" id="menubuttons_align">
+			        <a class="nav-link" href="#" id="menutextcolor">Maps</a>
+			      </li>
+			      <li class="nav-item" id="menubuttons_align">
+			        <a class="nav-link" href="#" id="menutextcolor">Contact us</a>
+			      </li>
+			      <li id="menubuttons_align">	      	
+					<div class="input-group mb-3">
+					  <input type="text" class="form-control" placeholder="search.." aria-label="search_label" aria-describedby="basic-addon2" style="font-style: italic; width: 350px;">
+					  <div class="input-group-append">
+					    <span class="input-group-text" id="basic-addon2"><i class="bi bi-search"></i></span>
+					  </div>
+					</div>
+			      </li>
+			    </ul>
+			    
+			  </div>
+			</nav>
+			<div class="row">
+			  <div class="col-md-2" style="padding: 20px;">
+			  	
+			  </div>
+			  
+			  <div class="col-md-10" id="BreadcrumbStyle">	  	
+
+
+				<div class="row">
+					<div class="col-md-7">
+						
+					</div>
+				</div>	  
+			  </div>	  
+			</div>
+		</div>
+    <container>
+      
+        <div class="row" id = "card1" >
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <a href="addProp.html"><h5 class="card-title">Add Property</h5></a>
+                <h6 class="card-subtitle mb-2 text-muted">Click to Add a new Property</h6>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class = "row" id = "card1">
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <a href="updateinit.html"><h5 class="card-title">Update Property</h5></a>
+                <h6 class="card-subtitle mb-2 text-muted">Click to change you property details</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+          
+        
+        <div class="row" id = "card1">
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <a href="deleteinit.html"><h5 class="card-title">Delete Property</h5></a>
+                <h6 class="card-subtitle mb-2 text-muted">Click if you want to delete a Property</h6>
+                
+              </div>
+            </div>
+          </div>
+
+          
+        </div>
+    </container>
+  </body>
+</html>

@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Added jQuery -->
+    <script src="script.js"></script>
+    <style>
+      #searchbox
+	{
+		font-style: italic;
+		border-style: none;
+		border-radius: 2px;
+		padding: 5px;
+		width: 300px;
+		border-right-style:solid ;
+		border-right-color: lightgrey;
+	}
+#arcadeDesign
+	{		
+		font-size: 30px; 
+		padding-left: 150px;
+		background: black;
+		color: white;
+		background-image: "landingImage.jpg";
+		opacity: 0.5;
+		background-color: transparent;		
+	}
+#menutextcolor
+	{
+		color: white;		
+	}
+.searchbutton
+	{
+		border-style: none;
+		border-radius: 0px;		
+		height: 34px;
+		width: 50px;
+	}
+#menubuttons_align
+	{
+		padding-top: 12px;
+		padding-left: 10px;			
+	}
+#profilebuttons_align
+	{
+		float:right;		
+	}
+#menubar
+	{
+		background: rgb(12, 12, 12); 
+		padding-top: 15px; 
+		padding-bottom: 0px;	
+		opacity: 0.5;	
+	}
+#profilebar
+	{
+		background: rgb(162, 168, 163); 
+		padding: 10px;	
+		height: 50px;			
+					
+	}
+#profiletextcolor
+	{
+		color: rgb(12, 12, 12);
+		font-size: 20px;	
+
+	}
+
+nav li a:hover{
+	background: rgb(76, 76, 79);
+}
+ul
+	{
+		list-style: none;
+	}
+#menunavbar
+	{
+		padding: 0px;		
+	}
+#BreadcrumbStyle
+	{
+		padding: 10px;
+		padding-right: 30px;			
+	}
+#memeareabox
+	{
+		width: 100%;
+		height: 100%;
+	}
+#memeitbox
+	{
+		width: 200px; 
+		height: 100px;
+		margin-left: 20px;
+		text-align: center;
+	}
+#memepictures
+	{
+		padding-left: 25px;
+	}
+#memecards
+	{
+		width: 18rem; margin: 20px;	
+		border: none;	
+	}
+#userText
+	{
+		text-align: center; 		
+		color: white; 		
+		font-size: 25px;	
+		border: 2px;	
+		padding: 0px;			
+	}
+#commentbox
+	{
+		background: black; 
+/*		text-align: left; 		*/
+		color: white; 		
+		font-size: 25px;	
+/*		padding-top: 50px;	*/
+		padding-left: 15px;
+		font-family: arial;
+/*		opacity: 0.5;*/
+	}
+#cards-columns
+	{
+		background: black; 
+		opacity: 0.7;
+		color: white;	
+		width: 100%;
+		margin-left: 0px;	
+		border: none;	
+	}
+#Breadcrumbtext
+	{
+		color: black;
+	}
+#contact-col
+	{
+		background: black; 
+/*		opacity: 1.0;*/
+		color: white;
+		height: 70px;			
+		padding: 20px;	
+		padding-top: 20px;
+		border: none;	
+	}
+#contactus_box
+	{
+		border: 1px solid lightgray;
+		border-radius: 2px;	
+		padding: 10px;
+		padding-left: 20px;
+		padding-right: 20px;			
+		width: 100%;
+	}
+#Follow_us_box
+	{
+		background: black; 
+		color: white;
+		margin-top: 10px; 
+		height: 60px; 
+		font-size: 22px;
+/*		opacity: 0.3;*/
+		border: none;
+	}
+#contactus_textbox
+	{		 
+		align-content: center;		
+		border-radius: 2px;
+		border: 1px solid lightgray;		
+		padding: 10px;	
+		padding-left: 20px;
+		padding-right: 20px;
+		width: 100%;
+	}
+#card_option_box1
+	{
+		display: block;	
+		font-style: italic;	
+	}
+#card_option_box2
+	{
+		display: block;
+		font-style: italic;
+	}
+#contact_row
+	{
+		width: 100%;
+	}
+html, body 
+	{
+	    max-width: 100%;
+	    overflow-x: hidden;	    
+		background-image: "landingImage.jpg"
+	}
+#header_Explore
+	{
+		color: white; 
+		opacity: 1.0;
+		padding-top: 100px; 
+		font-style: italic; 
+		font-family: URW Chancery L, cursive;
+/*		background-color: #cccccc;*/
+	}
+a
+	{
+		color: black;
+	}
+
+.image_text 
+	{
+	  display: flex;
+	  align-items: center;
+	  justify-content: right;
+	  padding: 50px;
+	  background-color: black;
+	}
+
+.image_text2 
+	{
+	  display: flex;
+	  align-items: center;
+	  justify-content: left;
+	  padding: 50px;
+	  background-color: #3d3721;
+	}
+
+.image_text3
+	{
+	  display: flex;
+	  align-items: center;
+	  justify-content: left;
+	  padding: 50px;
+	  background-color: black;
+	}
+
+.text
+	{
+		padding-right: 30%;
+	}
+.text3
+	{
+		padding-left: 50px;
+	}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding-left: 200px;
+}
+.col-sm-6{
+	margin-left: 0px;
+	border-left: 10px;
+	padding-left: 100px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#contact_submit
+	{
+		background-color: green;
+		border: green;
+	}
+
+
+#sec4{
+	background-color:rgb(157, 143, 126)
+}
+
+#desc{
+	padding-top:130px;
+	padding-bottom: 0px;
+	padding-right: 10px;
+	padding-left: 200px;
+	color: rgb(181, 150, 78)!important;
+}
+
+#card1{
+  padding-left:750px;
+  padding-bottom: 40px;
+}
+h2{
+  padding-left:50px;
+}
+
+    </style>
+</head>
+<body>
+  <div>
+    <div id="profilebar">
+        <ul>	     
+          <li class="nav-item" id="profilebuttons_align">
+            <a class="navbar-brand" href="/" id="profiletextcolor"><i class="bi bi-box-arrow-right"></i>Log Out</a>
+          </li>
+                
+        </ul>	   
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="menunavbar">	 
+      <div class="collapse navbar-collapse" id="menubar">
+        <ul class="navbar-nav mr-auto">
+          <li>
+            <a class="navbar-brand mb-0 h1" href="#" id="arcadeDesign" style="font-family:'Times New Roman', Times, serif; font-weight: bold; color:rgb(237, 209, 209)">RENTAL PROPERTIES</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          </li>
+          <li class="nav-item" id="menubuttons_align">
+            <a class="nav-link" href="/home" id="menutextcolor">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item" id="menubuttons_align">
+            <a class="nav-link" href="#" id="menutextcolor">Gallery</a>
+          </li>
+          <li class="nav-item dropdown" id="menubuttons_align">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">
+              PropertyType
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Rental</a>
+              <a class="dropdown-item" href="#">Purchase</a>	          
+            </div>
+          </li>
+          <li class="nav-item" id="menubuttons_align">
+            <a class="nav-link" href="#" id="menutextcolor">Maps</a>
+          </li>
+          <li class="nav-item" id="menubuttons_align">
+            <a class="nav-link" href="#" id="menutextcolor">Contact us</a>
+          </li>
+          <li id="menubuttons_align">	      	
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="search.." aria-label="search_label" aria-describedby="basic-addon2" style="font-style: italic; width: 350px;">
+          <div class="input-group-append">
+            <span class="input-group-text" id="basic-addon2"><i class="bi bi-search"></i></span>
+          </div>
+        </div>
+          </li>
+        </ul>
+        
+      </div>
+    </nav>
+    <div class="row">
+      <div class="col-md-2" style="padding: 20px;">
+        
+      </div>
+      
+      <div class="col-md-10" id="BreadcrumbStyle">	  	
+
+
+      <div class="row">
+        <div class="col-md-7">
+          
+        </div>
+      </div>	  
+      </div>	  
+    </div>
+  </div>
+  <h2> Property Details</h2>
+    <div class="container mt-5">
+        <form id="propertyForm" enctype="multipart/form-data">
+          <div class="col">
+            <label for="name">Name</label>
+            <input id="name" class="form-control form-control-lg" type="text" placeholder="Enter the name of the property">
+          </div>
+          <div class="col">
+            <label for="description">Description</label>
+            <textarea id="description" class="form-control" aria-label="With textarea"></textarea>
+          </div>
+          <div class="col">
+            
+              <form>
+                <div class="form-group">
+                  <label for="countrySelect">Type</label>
+                  <select id="htype" class="form-control" name="country">
+                    <option value="" selected disabled>Select a type</option>
+                    <option value="Apartment">Apartment</option>
+                    <option value="Villa">Villa</option>
+                    <option value="Penthouse">Penthouse</option>
+                  </select>
+                </div>
+              </form>
+            
+          </div>
+          <div class="col">
+            <label for="bhk">BHK</label>
+            <input id="bhk" type="number" class="form-control" placeholder="Enter minimum value" required>
+          </div>
+          <div class="col">
+            <label for="squareFeet">Square Feet</label>
+            <input id="squareFeet" class="form-control form-control-lg" type="text" placeholder="Enter the Area in Sq.ft">
+          </div>
+
+          <div class="col">
+            <label for="squareFeet">Floor Plan 1 </label>
+            <input id="fp1" class="form-control form-control-lg" type="text" placeholder="Enter the Type of floor plan">
+
+          </div>
+
+          <div class="col">
+            <label for="bhk">Size</label>
+            <input id="fp1size" type="number" class="form-control" placeholder="Enter the size" required>
+          </div>
+          <div class="col">
+            <label for="squareFeet">Unit 1</label>
+            <input id="fp1u1" class="form-control form-control-lg" type="text" placeholder="">
+          </div>
+          <div class="col">
+            <label for="minValue">Unit1 price</label>
+            <input id="fp1u1pr" type="number" class="form-control" placeholder="Enter minimum price value" required>
+          </div>
+          <div class="col">
+            <label for="squareFeet">Unit 2</label>
+            <input id="fp1u2" class="form-control form-control-lg" type="text" placeholder="">
+          </div>
+          <div class="col">
+            <label for="minValue">Unit2 price</label>
+            <input id="fp1u2pr" type="number" class="form-control" placeholder="Enter the price" required>
+          </div>
+
+          <div class="col">
+            <label for="squareFeet">Floor Plan 2 </label>
+            <input id="fp2" class="form-control form-control-lg" type="text" placeholder="">
+
+          </div>
+
+          <div class="col">
+            <label for="bhk">Size</label>
+            <input id="fp2size" type="number" class="form-control" placeholder="Enter minimum value" required>
+          </div>
+
+          <div class="col">
+            <label for="squareFeet">Unit 1</label>
+            <input id="fp2u1" class="form-control form-control-lg" type="text" placeholder="">
+          </div>
+
+          <div class="col">
+            <label for="minValue">Unit1 price</label>
+            <input id="fp2u1pr" type="number" class="form-control" placeholder="Enter minimum value" required>
+          </div>
+
+          <div class="col">
+            <label for="squareFeet">Unit 2</label>
+            <input id="fp2u2" class="form-control form-control-lg" type="text" placeholder="">
+          </div>
+
+          <div class="col">
+            <label for="minValue">Unit2 price</label>
+            <input id="fp2u2pr" type="number" class="form-control" placeholder="Enter minimum value" required>
+          </div>
+
+          <div class="col">
+            <label for="address">Address</label>
+            <textarea id="address" class="form-control" aria-label="With textarea"></textarea>
+          </div>
+          <div class="col">
+            <label for="city">City</label>
+            <input id="city" class="form-control form-control-lg" type="text" placeholder="Enter the name of the city" required>
+          </div>
+          <div class="col">
+            
+              <form>
+                <div class="form-group">
+                  <label for="countrySelectCountry">Select Country:</label>
+                  <select id="countrySelectCountry" class="form-control" name="country">
+                    <option value="" selected disabled>Select a country</option>
+                    <option value="United States">United States</option>
+                  </select>
+                </div>
+              </form>
+            
+          </div>
+          <div class="col">
+            <label for="countrySelectState">Select State:</label>
+            <select id="countrySelectState" class="form-control" name="country">
+              <option value="" selected disabled>Select a state</option>
+            <option value="alabama">Alabama</option>
+            <option value="alaska">Alaska</option>
+            <option value="arizona">Arizona</option>
+            <option value="arkansas">Arkansas</option>
+            <option value="california">California</option>
+            <option value="colorado">Colorado</option>
+            <option value="connecticut">Connecticut</option>
+            <option value="delaware">Delaware</option>
+            <option value="florida">Florida</option>
+            <option value="georgia">Georgia</option>
+            <option value="hawaii">Hawaii</option>
+            <option value="idaho">Idaho</option>
+            <option value="illinois">Illinois</option>
+            <option value="indiana">Indiana</option>
+            <option value="iowa">Iowa</option>
+            <option value="kansas">Kansas</option>
+            <option value="kentucky">Kentucky</option>
+            <option value="louisiana">Louisiana</option>
+            <option value="maine">Maine</option>
+            <option value="maryland">Maryland</option>
+            <option value="massachusetts">Massachusetts</option>
+            <option value="michigan">Michigan</option>
+            <option value="minnesota">Minnesota</option>
+            <option value="mississippi">Mississippi</option>
+            <option value="missouri">Missouri</option>
+            <option value="montana">Montana</option>
+            <option value="nebraska">Nebraska</option>
+            <option value="nevada">Nevada</option>
+            <option value="new-hampshire">New Hampshire</option>
+            <option value="new-jersey">New Jersey</option>
+            <option value="new-mexico">New Mexico</option>
+            <option value="new-york">New York</option>
+            <option value="north-carolina">North Carolina</option>
+            <option value="north-dakota">North Dakota</option>
+            <option value="ohio">Ohio</option>
+            <option value="oklahoma">Oklahoma</option>
+            <option value="oregon">Oregon</option>
+            <option value="pennsylvania">Pennsylvania</option>
+            <option value="rhode-island">Rhode Island</option>
+            <option value="south-carolina">South Carolina</option>
+            <option value="south-dakota">South Dakota</option>
+            <option value="tennessee">Tennessee</option>
+            <option value="texas">Texas</option>
+            <option value="utah">Utah</option>
+            <option value="vermont">Vermont</option>
+            <option value="virginia">Virginia</option>
+            <option value="washington">Washington</option>
+            <option value="west-virginia">West Virginia</option>
+            <option value="wisconsin">Wisconsin</option>
+            <option value="wyoming">Wyoming</option>
+            </select>
+          </div>
+          <div class="col">
+            <label for="inputGroupFile01">Images</label>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Upload</span>
+              </div>
+              <div class="custom-file">
+                <input type="file" class="custom-file-input" id="inputGroupFile01">
+                <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <label for="currentOwner">Current Owner</label>
+            <input id="currentOwner" class="form-control form-control-lg" type="text" placeholder="">
+          </div>
+          <div class="col">
+            <label for="contactProperty">Contact Property</label>
+            <input id="contactProperty" class="form-control form-control-lg" type="text" placeholder="">
+          </div>
+          <div class="col">
+            <label for="contactOwner">Contact Owner</label>
+            <input id="contactOwner" class="form-control form-control-lg" type="text" placeholder="">
+          </div>
+          
+          <div class="col">
+            <button type="button" class="btn btn-primary btn-lg" onclick="submitForm()">Submit</button>
+          </div>
+        </form>
+    </div>
+
+    <script>
+        function submitForm() {
+            const formData = {
+                name: document.getElementById('name').value,
+                description: document.getElementById('description').value,
+                type: document.getElementById('htype').value,
+                BHK: document.getElementById('bhk').value,
+                Squareft: document.getElementById('squareFeet').value,
+                pricing: {
+                min:"" ,
+                max:"",
+                floor_plan:{
+                  [document.getElementById('fp1').value] : {
+                    size : document.getElementById('fp1size').value,
+                    Units : {
+                      [document.getElementById('fp1u1').value] : {
+                        status: "open",
+                        price: document.getElementById('fp1u1pr').value
+                      },
+                      [document.getElementById('fp1u2').value] : {
+                        status: "open",
+                        price: document.getElementById('fp1u2pr').value
+                      }
+                      
+
+                    }
+
+
+
+                  },
+                  [document.getElementById('fp2').value] : {
+                    size : document.getElementById('fp2size').value,
+                    Units : {
+                      [document.getElementById('fp2u1')] : {
+                        status: "open",
+                        price: document.getElementById('fp2u1pr').value
+                      },
+                      [document.getElementById('fp2u2')] : {
+                        status: "open",
+                        price: document.getElementById('fp2u2pr').value
+                      }
+                      
+
+                    }
+
+
+
+                  }
+
+                  
+                  
+
+
+                }
+                },
+                address: document.getElementById('address').value,
+                City: document.getElementById('city').value,
+                Country: document.getElementById('countrySelectCountry').value,
+                State: document.getElementById('countrySelectState').value,
+                images: document.getElementById('inputGroupFile01').value,
+                CurrentOwner: document.getElementById('currentOwner').value,
+                ContactProperty: document.getElementById('contactProperty').value,
+                ContactOwner: document.getElementById('contactOwner').value,
+            };
+
+            const unitPrices = [
+
+              document.getElementById('fp1u1pr').value,
+              document.getElementById('fp1u2pr').value,
+              document.getElementById('fp2u1pr').value,
+              document.getElementById('fp2u2pr').value,
+            ];
+
+            unitPrices.push(formData.pricing.min, formData.pricing.max);
+            formData.pricing.min = Math.min(...unitPrices);
+            formData.pricing.max = Math.max(...unitPrices);
+
+            $.ajax({
+                type: 'POST',
+                url: '/submit-form',
+                contentType: 'application/json',
+                data: JSON.stringify(formData),
+                success: function (response) {
+                    alert(response);
+                },
+                error: function (error) {
+                    console.error(error);
+                    alert('Failed to submit form data. Please try again.');
+                }
+            });
+        }
+    </script>
+</body>
+</html>

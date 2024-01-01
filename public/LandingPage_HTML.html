@@ -1,0 +1,338 @@
+<!---
+@AshwinSai
+Title: Landing Page
+Fall 2023
+--->
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="./Resources/LandingPage_CSS.css">    
+
+	<title>Rent4You!</title>
+</head>
+
+<body>	
+	
+	<div id="back-image" style="background-image: url('./images/landingImage.jpg'); background-size: cover">
+		<!-- First Page	 -->
+		<div style="height: 100vh;">
+			<div id="profilebar">
+			    <ul>	     
+			      <li class="nav-item" id="profilebuttons_align">
+			        <a class="navbar-brand" href="/signup" id="profiletextcolor"><i class="bi bi-box-arrow-right"></i>Login</a>
+			      </li>
+			            
+			    </ul>	   
+			</div>
+			<nav class="navbar navbar-expand-lg navbar-light bg-light" id="menunavbar">	 
+			  <div class="collapse navbar-collapse" id="menubar">
+			    <ul class="navbar-nav mr-auto">
+			      <li>
+			      	<a class="navbar-brand mb-0 h1" href="#" id="arcadeDesign" style="font-family:'Times New Roman', Times, serif; font-weight: bold; color:rgb(237, 209, 209)">RENTAL PROPERTIES</a>
+				    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				    <span class="navbar-toggler-icon"></span>
+				    </button>
+			      </li>
+			      <li class="nav-item" id="menubuttons_align">
+			        <a class="nav-link" href="/home" id="menutextcolor">Home <span class="sr-only">(current)</span></a>
+			      </li>
+			      <li class="nav-item" id="menubuttons_align">
+			        <a class="nav-link" href="#" id="menutextcolor">Gallery</a>
+			      </li>
+			      <li class="nav-item dropdown" id="menubuttons_align">
+			        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">
+			          PropertyType
+			        </a>
+			        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			          <a class="dropdown-item" href="#">Rental</a>
+			          <a class="dropdown-item" href="#">Purchase</a>	          
+			        </div>
+			      </li>
+			      <li class="nav-item" id="menubuttons_align">
+			        <a class="nav-link" href="#" id="menutextcolor">Maps</a>
+			      </li>
+			      <li class="nav-item" id="menubuttons_align">
+			        <a class="nav-link" href="#" id="menutextcolor">Contact us</a>
+			      </li>
+			      <li id="menubuttons_align">	      	
+					<div class="input-group mb-3">
+					  <input type="text" class="form-control" placeholder="search.." aria-label="search_label" aria-describedby="basic-addon2" style="font-style: italic; width: 350px;">
+					  <div class="input-group-append">
+					    <span class="input-group-text" id="basic-addon2"><i class="bi bi-search"></i></span>
+					  </div>
+					</div>
+			      </li>
+			    </ul>
+			    
+			  </div>
+			</nav>
+			<div class="row">
+			  <div class="col-md-2" style="padding: 20px;">
+			  	
+			  </div>
+			  
+			  <div class="col-md-10" id="BreadcrumbStyle">	  	
+				<!-- <nav aria-label="breadcrumb">
+				  <ol class="breadcrumb">
+				    <li class="breadcrumb-item"><a href="#" id="Breadcrumbtext">Home</a></li>
+				    <li class="breadcrumb-item"><a href="#" id="Breadcrumbtext">Games</a></li>
+				    <li class="breadcrumb-item"><a href="#" id="Breadcrumbtext">Online</a></li>
+				    <li class="breadcrumb-item active" aria-current="page">Meme It</li>
+				  </ol>
+				</nav> -->
+
+				<div class="row">
+					<div class="col-md-7">
+						
+						<!-- <div class="card" id="memeareabox">
+						  <div class="card-body">
+							<div class="card" id="memeitbox">
+							  <div class="card-body">
+								<p style="font-size: 36px;"><strong>Meme It</strong></p>
+							  </div>					  
+							</div>
+						  </div>
+						  <div class="row">
+						  	<div class="col-md-12" id="memepictures">
+						  		<div class="row" id="memepictures">
+							  		<div class="card" id="memecards">
+									  <img class="card-img-top" src="No.png" alt="Card image cap">
+									  <div class="card-body" id="userText">
+									    <p class="card-text" id="card_option_box1"><i>Weekday</i></p>
+									  </div>
+									</div>
+									<div class="card" id="memecards">
+									  <img class="card-img-top" src="Yes.png" alt="Card image cap">
+									  <div class="card-body" id="userText">
+									    <p class="card-text" id = "card_option_box2"><i>Weekend</i></p>
+									  </div>
+									</div>
+								</div>
+						  	</div>
+						  </div>
+						</div>	 -	
+								
+					</div>
+					<div class="col-md-4">
+						<!-- <div class="jumbotron" style="background-color: transparent; border: 2px white solid;">
+						  <h1 class="display-6">Already a member?</h1>
+						  <hr class="my-4">
+						  <form>
+							  <div class="form-group">					    
+							    <input type="text" class="form-control" name="lefttext" id="email_id" placeholder="Email" />
+								</br>
+							    <input type="password" class="form-control" name="righttext" id="pwd" placeholder="Password" />		    
+							  </div>
+							
+							  <button type="button" class="btn btn-primary" id="clickme_G" onclick="Login()" style="background-color: green; border: green;">Login</button>
+							  <button type="button" class="btn btn-primary" id="clickme_R" onclick="Register()" style="background-color: green; border: green;">Register</button>
+						  </form>				 
+						</div> -->
+					</div>
+				</div>	  
+			  </div>	  
+			</div>
+		</div>
+	</div>
+
+		<!-- Second page -->
+		<div class="row" id = "test1" style="background-image: url('./images/landingImage.jpg');">
+		  <div class="col-sm-6" style="padding: 0px;">
+		  	<div class="card" id="commentbox">
+			 <!--  <div class="card-header">
+			    Gallery
+			  </div> -->
+			  <ul class="list-group list-group-flush">
+			    <li class="list-group-item" style="padding: 0px; background-color: transparent;">
+			    	<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+					  <div class="carousel-inner" style="height: 830px; padding: 100px;">
+					    <div class="carousel-item active" style="height: 100%;">
+					      <img class="d-block w-100" src="images/1.jpeg" alt="First slide" height="100%">
+					    </div>
+					    <div class="carousel-item" style="height: 100%;">
+					      <img class="d-block w-100" src="images/2.jpg" alt="Second slide" height="100%">
+					    </div>
+					    <div class="carousel-item" style="height: 100%;">
+					      <img class="d-block w-100" src="images/3.jpg" alt="Third slide" height="100%">
+					    </div>
+					    <div class="carousel-item" style="height: 100%;"> 
+					      <img class="d-block w-100" src="images/4.jpg" alt="Third slide" height="100%">
+					    </div>
+					  </div>
+					  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+					    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					    <span class="sr-only">Previous</span>
+					  </a>
+					  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+					    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+					    <span class="sr-only">Next</span>
+					  </a>
+					</div>
+			    </li>		    
+			  </ul>
+			</div>	  	
+		  </div>
+		  <div class="col-sm-3" style="padding: 0px; margin-left: -10px;">
+		  	<div class="jumbotron jumbotron-fluid" style="height: 100%; background-color: rgb(0, 0, 0);">
+			  <h1 class="display-5" id="header_Explore">Browse through our houses!</h1>		 
+			  <hr class="my-4">
+			  <p style="color: white;">Here's a glimpse! Wanna see more ,</p>
+			  <a href="./signup" style="color: darkcyan;"> Login here<b></b></a>		  
+			</div>
+		  </div>
+		  <div class="col-sm-3">
+		  	<div class="card" style="width: auto; background-color: transparent; padding-right:20px;">
+			  <div class="card-header" id="contact-col" style="font-size: 25px;">
+			    <b>Contact us</b>
+			  </div>
+			  <ul class="list-group list-group-flush">
+			    <li class="form-inline my-2 my-lg-0" id="contactus_box">
+			    	<div class="input-group mb-2" id="contact_row">
+					  <div class="input-group-prepend">				  	
+					    <span class="input-group-text" id="basic-addon1">Name</span>
+					  </div>
+					  <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+					</div>		    			    		    
+			    </li>
+			    <li class="form-inline my-2 my-lg-0" id="contactus_box">
+			    	<div class="input-group mb-2" id="contact_row">
+					  <div class="input-group-prepend">
+					    <span class="input-group-text" id="basic-addon1"><i class="bi bi-envelope"></i></span>
+					  </div>
+					  <input type="text" class="form-control" aria-label="email" aria-describedby="basic-addon1">
+					</div>
+			    </li>	
+			    <li class="form-inline my-2 my-lg-0" id="contactus_box" style="align-content: center;">
+			    	<div class="input-group mb-2" id="contact_row">
+					  <div class="input-group-prepend">
+					    <span class="input-group-text" id="basic-addon1"><i class="bi bi-telephone-fill"></i></span>
+					  </div>
+					  <input type="text" class="form-control" aria-label="phonenum" aria-describedby="basic-addon1">
+					</div>
+			    </li>
+			    <li class="form-inline my-2 my-lg-0" id="contactus_textbox">
+			    	<textarea id="contactus_textbox" name="w3review" rows="2">...</textarea>
+			    </li>
+			    <li class="form-inline my-2 my-lg-0" id="contactus_box">
+					<button type="button" class="btn btn-primary" id="contact_submit">Submit</button>
+			    </li>	    
+			  </ul>
+			</div>
+			
+		  </div>
+		  </div>
+		
+		
+		<!-- Third Section -->
+    	<div class="image_text3" style="background-color: rgb(167, 165, 137);">			
+		  <div class="text3">
+		  	<h3  style="text-align: center;">Welcome to Rent4You</h3>
+		  	<p  style="text-align: center;">A Luxury Service Place </p>
+		    <p style="text-align: center;">
+		    	"Welcome to Rent4You, your one-stop destination for all your rental needs. Discover a world of convenience as you browse and book from a wide range of rental options."
+
+				"Explore a diverse selection of rental categories, from vacation homes and cars to tools and equipment. Our user-friendly platform makes it easy to find and secure the rentals you need."
+
+				"At Rent4You, we connect renters with trusted hosts and providers, ensuring a seamless and secure rental experience. Your satisfaction is our top priority."
+
+				"Whether you're planning a weekend getaway, a DIY project, or need a temporary solution, our rental marketplace offers affordable and flexible options to meet your requirements."
+
+				"Join our community of renters and hosts today and experience the convenience and cost-effectiveness of renting with us. Your next adventure or project is just a few clicks away."
+			</p>
+			<img src="images/garden.jpg" alt="Image" style="margin-left: 40%; width: 300px; height: 300px;"></img>
+			<p style="text-align: center;">
+				</br>
+				Visit Rent4You Apartments today and discover the rare blend of a relaxing atmosphere, picture perfect lifestyle and the highest level of customer service you’ve always wanted.
+			</p>
+		  </div>
+    	</div>
+
+		 <!-- Fourth Section -->
+		<div class="image_text" id = "sec4">
+		  <div class="text">		    
+		    <div class="jumbotron" style="border: 2px white solid; opacity: 0.7; width: 150%;">
+			  <h1 class="display-6">People like our quality and they come to us!</h1>
+			  <p><i>-General Reviews</i></p>			 			 
+			</div>
+		  </div>
+	      <div class="image" style="padding-right: 100px;">
+	        <img src="images/gym.jpg" width="700px" height="500px">
+	      </div>		  
+    	</div>
+
+    	<!-- Fifth Section -->
+    	<div class="image_text2">
+	       <div class="row">
+			  <div class="column">
+			    <img src="images/5.jpg" alt="Snow" style="width:100%; height: 30vh;">
+			    <h4 class="image_text" style="justify-content: center; color: whitesmoke; height: 100px;"><i>Villas</i></h4>
+			  </div>
+			  <div class="column">
+			    <img src="images/6.jpg" alt="Forest" style="width:100%; height: 30vh;">
+			    <h4 class="image_text" style="justify-content: center; color: whitesmoke; height: 100px;"><i>Apartments</i></h4>
+			  </div>
+			  <div class="column">
+			    <img src="images/7.jpg" alt="Mountains" style="width:100%; height: 30vh;">
+			    <h4 class="image_text" style="justify-content: center; color: whitesmoke; height: 100px;"><i>PentHouse</i></h4>
+			  </div>
+			</div>
+    	</div>
+
+    	<!-- Sixth Section -->
+    	<div class="image_text3">
+	       <div class="row" style="padding-left: 10px; " >
+			  <div class="column" style="padding-top: 20px; padding-left: 10px;">
+			   	<a href="" style="color:white;"><u>Terms and Condition</u></a>
+			  </div>
+			  <div class="column" style="padding-top: 20px; padding-left: 50px;">
+				<a href="" style="color:white;"><u>Privacy Policy</u></a>
+			  </div>
+			  <div class="column" style="padding-top: 20px; padding-left: 50px;">
+			    <p style="color:white;"> Reach us at : AddRent4You<br> 1234 McCallum_Blvd, Dallas , TX 75252</p>
+			  </div>
+			</div>	
+			
+			<div class="card" style="width: auto; background-color: transparent; padding-right:20px; padding-left:400px;">
+				<div class="card-header" id="Follow_us_box"><b>Follow us</b>
+				</div>
+				<ul class="list-group list-group-flush">
+				  <li class="form-inline my-2 my-lg-0" id="contactus_box">	
+					  <ul style="padding: 10px; height: 80px;">	    	
+						  <a href="#" style="color: white;"><i class="bi bi-instagram"></i></a>
+						  <p style="color:white;"><i>Rent4You</i></p>
+					  </ul>
+								  
+				  </li>
+				  <li class="form-inline my-2 my-lg-0" id="contactus_box">
+					  <ul style="padding: 5px; height: 80px;">
+						  <a href="#" style="color: white;"><i class="bi bi-youtube"></i></a>
+						  <p style="color:white;"><i>Rent4You</i></p>
+					  </ul>
+				  </li>			 	   
+				</ul>
+			  </div>
+    	</div>	
+
+    	<!-- Seventh Section -->
+    	<div class="image_text3" style="height:20px;">
+	       <div style="padding-left:50%">
+			  <p style="color: white;">All rights reserved.</p>
+			</div>
+    	</div>	
+					  
+			
+	</div>
+	
+</body>
+
+<script type="text/javascript" src="./Resources/LandingPage_JavaScript.js"></script>
+
+</html>
