@@ -1,0 +1,267 @@
+ [
+      {
+        "name": "Estates on Frankford",
+        "description": "Enjoy a classic Home of students with friends and family!",
+        "type": "Apartment",
+        "BHK": 2,
+        "Square Ft": "819 - 1100 sq ft",
+        "amenities" : ["Swimming Pool", "Gym (24x7)", "Club House","Guest Parking", "Wifi", "Parking Space", "Park", "Service and Maintence In house", "Common Play Room", "EV Charging Station"],
+        "pricing": 
+                  {
+                    "min": "$1500.00",
+                    "max": "$1900.00",
+                    "floor_plan":
+                                {
+                                  "B1":{"size":"819 sqft","Units":{"A123":{"status":"Open","price":"$1500"}}},
+                                  "B2":{"size":"950 sqft", "Units":{"C123":{"status":"Open","price":"$1650"}}},
+                                  "B3":{"size":"1100 sqft", "Units":{"D123":{"status":"Feb 01 2023","price":"$1900"}}}
+                                }
+                  },
+        "address": "123 Frankford Street",
+        "City": "Dallas",
+        "Country": "USA",
+        "image": 
+                {
+                  "description": "Wonderful Home with all amenities",
+                  "path":"images/1.jpeg",
+                  "image1": "i1.jpeg",
+                  "image2": "i2.jpeg",
+                  "image3": "i3.jpeg"
+                },
+        "CurrentOwner": "-",
+        "ContactProperty": "-",
+        "ContactOwner": "-"
+      },
+      {
+        "name": "Pearl on Frankford",
+        "description": "Test your basketball skills and aim for the better neighbourhood!",
+        "type": "Apartment",
+        "BHK": 2,
+        "Square Ft": "900 - 1200 sq ft",
+        "amenities" : ["Swimming Pool", "Gym (24x7)", "Club House","Guest Parking", "Wifi", "Parking Space", "Park", "Service and Maintence In house", "Common Play Room", "EV Charging Station"],
+        "pricing": 
+                  {
+                    "min": "$1750.00",
+                    "max": "$2050.00",
+                    "floor_plan":
+                                {
+                                  "AB1":{"size":"900 sqft","Units":{"H765":{"status":"Open","price":"$1750"}}},
+                                  "B2":{"size":"990 sqft", "Units":{"J88":{"status":"Open","price":"$1850"}}},
+                                  "BH3":{"size":"1200 sqft", "Units":{"G89":{"status":"Feb 01 2023","price":"$2050"}}}
+                                }
+                  },
+        "address": "456 Adam Street",
+        "City": "Dallas",
+        "Country": "USA",
+        "image": 
+                {
+                  "description": "Neihgbourhood made easy with basketball hoop with colorful balls.",
+                  "path":"images/2.jpg",
+                  "image1": "i4.jpeg",
+                  "image2": "i5.jpeg",
+                  "image3": "i6.jpeg"
+                },
+        "CurrentOwner": "-",
+        "ContactProperty": "-",
+        "ContactOwner": "-"
+      },
+      {
+        "name": "Chatham courts & Reflections",
+        "description": "Fast-paced fun with peace. Defeat your disturbance!",
+        "type": "Luxury Villas",
+        "BHK": 3,
+        "Square Ft": "1050 - 1250 sq ft",
+        "amenities" : ["Swimming Pool", "Gym (24x7)", "Club House","Guest Parking", "Wifi", "Parking Space", "Park", "Service and Maintence In house", "Common Play Room", "EV Charging Station"],
+        "pricing": 
+                  {
+                    "min": "$2500.00",
+                    "max": "$2850.00",
+                    "floor_plan":
+                                {
+                                  "A":{"size":"1050 sqft","Units":{"C1":{"status":"Open","price":"$2500"}}},
+                                  "Z":{"size":"1100 sqft", "Units":{"R25":{"status":"Open","price":"$2650"}}},
+                                  "L":{"size":"1250 sqft", "Units":{"C9":{"status":"Feb 01 2023","price":"$2850"}}}
+                                }
+                  },
+       "address": "789 Godman Street",
+       "City": "Dallas",
+       "Country": "USA",
+       "image": 
+                {
+                  "description": "Worlds best Place to live!",
+                  "path":"images/3.jpg",
+                  "image1": "i7.jpeg",
+                  "image2": "i8.jpeg",
+                  "image3": "i9.jpeg"
+                },
+        "CurrentOwner": "-",
+        "ContactProperty": "-",
+        "ContactOwner": "-"
+      },
+      {
+        "name": "Ashwood Villas",
+        "description": "Experience the thrill of home-far-away-from-home in Ashwood!",
+        "type": "Villas",
+        "BHK": 1,
+        "Square Ft": "750 - 1050 sq ft",
+        "amenities" : ["Swimming Pool", "Gym (24x7)", "Club House","Guest Parking", "Wifi", "Parking Space", "Park", "Service and Maintence In house", "Common Play Room", "EV Charging Station"],
+        "pricing": 
+                  {
+                    "min": "$900.00",
+                    "max": "$1100.00",
+                    "floor_plan":
+                                {
+                                  "AV1":{"size":"1050 sqft","Units":{"1323":{"status":"Open","price":"$900"}}},
+                                  "AV5":{"size":"1100 sqft", "Units":{"1345":{"status":"Open","price":"$950"}}},
+                                  "AV8":{"size":"1250 sqft", "Units":{"967":{"status":"Feb 01 2023","price":"$1000"}}}
+                                }
+                  },
+       "address": "980 Washington Street",
+       "City": "Dallas",
+       "Country": "USA",
+       "image": 
+                {
+                  "description": "Want a family, join us!",
+                  "path":"images/4.jpg",
+                  "image1": "i1.jpeg",
+                  "image2": "i3.jpeg",
+                  "image3": "i5.jpeg"
+                },
+        "CurrentOwner": "-",
+        "ContactProperty": "-",
+        "ContactOwner": "-"
+      },
+      {
+        "name": "Northside Apartments",
+        "description": "Play with us and relive the nostalgia!",
+        "type": "Apartment",
+        "BHK": 2,
+        "Square Ft": "1050 - 1500 sq ft",
+        "amenities" : ["Swimming Pool", "Gym (24x7)", "Club House","Guest Parking", "Wifi", "Parking Space", "Park", "Service and Maintence In house", "Common Play Room", "EV Charging Station"],
+        "pricing": 
+                  {
+                    "min": "$1750.00",
+                    "max": "$2250.00",
+                    "floor_plan":
+                                {
+                                  "NS1":{"size":"1050 sqft","Units":{"12":{"status":"Open","price":"$1750"}}},
+                                  "NP12":{"size":"1100 sqft", "Units":{"15":{"status":"Open","price":"$1900"}}},
+                                  "NS90":{"size":"1400 sqft", "Units":{"09":{"status":"Feb 01 2023","price":"$2100"}}}
+                                }
+                  },
+       "address": "1234 Livingstone Street",
+       "City": "Dallas",
+       "Country": "USA",
+       "image": 
+                {
+                  "description": "Classic apartment with DraftHouse Bar",
+                  "path":"images/5.jpg",
+                  "image1": "i7.jpeg",
+                  "image2": "i9.jpeg",
+                  "image3": "i10.jpeg"
+                },
+        "CurrentOwner": "-",
+        "ContactProperty": "-",
+        "ContactOwner": "-"
+      },
+      {
+        "name": "Cortland Creeks",
+        "description": "Experience the thrill of high-tech Housing with your friends!",
+        "type": "Villas",
+        "BHK": 4,
+        "Square Ft": "1500 - 2500 sq ft",
+        "amenities" : ["Swimming Pool", "Gym (24x7)", "Club House","Guest Parking", "Wifi", "Parking Space", "Park", "Service and Maintence In house", "Common Play Room", "EV Charging Station"],
+        "pricing": 
+                  {
+                    "min": "$2500.00",
+                    "max": "$2755.50",
+                    "floor_plan":
+                                {
+                                  "CC1":{"size":"1500 sqft","Units":{"Bamboo-123":{"status":"Open","price":"$2500"}}},
+                                  "CC65":{"size":"1700 sqft", "Units":{"Apple-345":{"status":"Open","price":"$2600"}}},
+                                  "CC100":{"size":"1900 sqft", "Units":{"Juniper-89":{"status":"Feb 01 2023","price":"$2625"}}}
+                                }
+                  },
+       "address": "007 James Street",
+       "City": "Dallas",
+       "Country": "USA",
+       "image": 
+                {
+                  "description": "Housing neon lights and futuristic obstacles.",
+                  "path":"images/6.jpg",
+                  "image1": "i2.jpeg",
+                  "image2": "i4.jpeg",
+                  "image3": "i6.jpeg"
+                },
+        "CurrentOwner": "-",
+        "ContactProperty": "-",
+        "ContactOwner": "-"
+      },
+      {
+        "name": "MAA Highlands",
+        "description": "Live your house on the High and experience like never before!",
+        "type": "Villas",
+        "BHK": 2,
+        "Square Ft": "900 - 1200 sq ft",
+        "amenities" : ["Swimming Pool", "Gym (24x7)", "Club House","Guest Parking", "Wifi", "Parking Space", "Park", "Service and Maintence In house", "Common Play Room", "EV Charging Station"],
+        "pricing": 
+                  {
+                    "min": "$1400.00",
+                    "max": "$1940.50",
+                    "floor_plan":
+                                {
+                                  "MAA1":{"size":"900 sqft","Units":{"H1":{"status":"Open","price":"$1400"}}},
+                                  "MAA2":{"size":"950 sqft", "Units":{"H2":{"status":"Open","price":"$1450"}}},
+                                  "MAA3":{"size":"1050 sqft", "Units":{"H3":{"status":"Feb 01 2023","price":"$1510"}}}
+                                }
+                  },
+       "address": "777 Downtown Donald Paveway",
+       "City": "Dallas",
+       "Country": "USA",
+       "image": 
+                {
+                  "description": "Life is best when you are living on a high place",
+                  "path":"images/7.jpg",
+                  "image1": "i8.jpeg",
+                  "image2": "i10.jpeg",
+                  "image3": "i2.jpeg"
+                },
+        "CurrentOwner": "-",
+        "ContactProperty": "-",
+        "ContactOwner": "-"
+      },
+      {
+        "name": "Estates of Richardson",
+        "description": "Swipe the cards and aim for the target house in this target living area!",
+        "type": "Penthouse",
+        "BHK": 3,
+        "Square Ft": "1010 - 1670 sq ft",
+        "amenities" : ["Swimming Pool", "Gym (24x7)", "Club House","Guest Parking", "Wifi", "Parking Space", "Park", "Service and Maintence In house", "Common Play Room", "EV Charging Station"],
+        "pricing": 
+                  {
+                    "min": "$2400.00",
+                    "max": "$2900.50",
+                    "floor_plan":
+                                {
+                                  "ER-01":{"size":"1010 sqft","Units":{"123":{"status":"Open","price":"$2400"},"656":{"status":"Open", "price":"$2450"}}},
+                                  "ER-02":{"size":"1100 sqft", "Units":{"235":{"status":"Open","price":"$2550"}}},
+                                  "ER-03":{"size":"1200 sqft", "Units":{"578":{"status":"Feb 01 2023","price":"$2600"}}}
+                                }
+                  },
+       "address": "001 Broadway Street",
+       "City": "Dallas",
+       "Country": "USA",
+       "image": 
+                {
+                  "description": "A wonderful view of the city!",
+                  "path":"images/8.png",
+                  "image1": "i1.jpeg",
+                  "image2": "i5.jpeg",
+                  "image3": "i8.jpeg"
+                },
+        "CurrentOwner": "-",
+        "ContactProperty": "-",
+        "ContactOwner": "-"
+      }
+    ]
+  
