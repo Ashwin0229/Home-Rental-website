@@ -1,0 +1,82 @@
+.grid-container 
+{
+  text-align: center;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+/*  background-color: #2196F3;*/
+  padding: 10px;
+}
+.grid-container2 
+{
+  text-align: center;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+/*  background-color: #2196F3;*/
+  padding: 10px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.grid-item 
+{
+  padding: 10px;
+}
+
+#div-content
+{
+  text-align: center;
+  color: blue;
+}
+
+#upper-part
+{
+  background: lightgray;
+  padding: 20px;
+}
+
+#home_link
+{
+  color: blue;
+  padding: 10px;
+}
+
+#add_button
+{
+  margin:10px;
+  margin-left: 30px;
+/*  padding: 10px;*/
+}
+
+#search_box
+{
+  border-radius: 4px;
+  padding: 10px;
+  width: 200px;
+  height: 30px;
+  margin:10px;
+  margin-left: 30px;
+}
+
+#filter
+{
+  border-radius: 4px;
+/*  padding: 10px;*/
+  width: 200px;
+  height: 30px;
+  margin:10px;
+  margin-left: 30px;
+}
+#BHK_filter
+{
+  border-radius: 4px;
+/*  padding: 10px;*/
+  width: 200px;
+  height: 30px;
+  margin:10px;
+  margin-left: 30px;
+}
+
+#button_link
+{
+  background: None;
+  border:None;
+}
